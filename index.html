@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <h4 class="cong--0 hidden">🥂Congratulations you are the winner!</h4>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <h4 class="cong--1 hidden">🥂Congratulations you are the winner!</h4>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="/img/dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+
+    <div class="modal parafrontt">
+      <button class="close-modal">&times;</button>
+      <h1 id="front" >🤗Welcome to Dice game!!</h1>
+      <p>
+       <h5 style="margin-bottom:10px">Rules to play this game 📑</h5>
+       1) There are two players in this game.<br>
+       2) Winning Score is 50. The player who gets 50 score first is considerd to be the winner.<br>
+       3) Click on roll dice button and you can see that you current score will be increased, Then click on hold button to update the current score to main score and switch to other player.<br>
+       4) If the rolled dice is of 1, Then your current score will become zero and the chance is switch to other player.<br>
+       5) Go ahead, click on cross button to play. All the best👍
+      </p>
+    </div>
+    <div class="overlay "></div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
